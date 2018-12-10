@@ -1,0 +1,143 @@
+/* Body Style */
+
+html, body{
+  height: 100%;
+}
+
+body { 
+  background: linear-gradient(45deg, #02001F,#1F1B4E);
+  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+}
+
+.container{
+  margin-top: 30px;
+}
+
+/* Start Quiz */
+#start{  
+  border: 4px solid transparent;
+  border-image: linear-gradient(to left, #4193ff , rgb(45, 206, 255));
+  border-image-slice: 1;
+  background: linear-gradient(45deg, #02001F,#1F1B4E);
+  color: white;
+  height: auto;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#start:hover{
+  background: linear-gradient(to left, #4193ff , rgb(45, 206, 255));
+  color: #fff;
+}
+
+/* the quiz + score */
+
+#score{
+  color: white;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#theQuestion{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Button style */
+
+.list-group{
+    margin-top: 30px;
+}
+
+.btn-hover{
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover{
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus{
+  outline: none;
+}
+
+.btn-hover.color-1{
+  background-image: linear-gradient(to right, rgb(45, 206, 255), #4193ff, #4193ff, rgb(45, 206, 255));
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+/* results + start again */
+
+#results{
+  color: white;
+  font-size: 65px;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#startAgain{  
+  border: 4px solid transparent;
+  border-image: linear-gradient(to left, #4193ff , rgb(45, 206, 255));
+  border-image-slice: 1;
+  background: linear-gradient(45deg, #02001F,#1F1B4E);
+  color: white;
+  height: auto;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#startAgain:hover{
+  background: linear-gradient(to left, #4193ff , rgb(45, 206, 255));
+  color: #fff;
+}
+
+/* Change screen */
+
+@media screen and (max-width: 770px) {
+ #results{
+    font-size: 50px;
+ }
+ #theQuestion{
+  font-size: 2rem;
+ }
+}
+
+@media screen and (max-width: 500px) {
+ #results{
+    font-size: 35px;
+ }
+ #theQuestion{
+  font-size: 1.5rem;
+ }
+}
